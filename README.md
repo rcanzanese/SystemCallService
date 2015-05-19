@@ -65,14 +65,22 @@ or
 ####Start Logging
 
 ```sc.exe start SystemCallService```
+
 or
+
 ```SystemCallService.exe -start ```
+
 or
+
 ```net start SystemCallService```
 
 ####Stop Logging
 ```sc.exe stop SystemCallService```
+
 or
+
 ```SystemCallService.exe -stop ```
+
 or
+
 ```net stop SystemCallService```
