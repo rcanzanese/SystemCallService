@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SystemCallService.Properties" GeneratedClassName="SystemCallServiceSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SystemCallServiceData</Value>
+    </Setting>
+    <Setting Name="DebugLogFilename" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">debug_log.txt</Value>
+    </Setting>
+    <Setting Name="ProcessTableStructure" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Pid int, Start DATETIME, StartRelativeMSec DOUBLE, StopRelativeMSec DOUBLE, CommandLine TEXT, ImageFileName TEXT, ParentID int, Guid TEXT PRIMARY KEY, ProcessKey INTEGER, Md5 TEXT</Value>
+    </Setting>
+    <Setting Name="ThreadTableStructure" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Pid int, PidStartRelativeMSec DOUBLE, Tid int, Start DateTime, StartRelativeMSec DOUBLE, StopRelativeMSec DOUBLE, Guid TEXT PRIMARY KEY, ProcessGuid TEXT </Value>
+    </Setting>
+    <Setting Name="SystemInfoTableStructure" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NtoskrnlVersion TEXT, NtoskrnlMD5 TEXT, Cores int, Hostname TEXT, HostSampling DOUBLE, ProcessSampling DOUBLE, ThreadSampling DOUBLE, HostTrace INT, ProcessTrace INT, ThreadTrace INT</Value>
+    </Setting>
+    <Setting Name="Verbosity" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AutoResetMs" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">3600000</Value>
+    </Setting>
+    <Setting Name="SymbolSubfolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">symbols</Value>
+    </Setting>
+    <Setting Name="NtSensorList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ntsensors.txt</Value>
+    </Setting>
+    <Setting Name="CommitInterval" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">120000</Value>
+    </Setting>
+    <Setting Name="ThreadDeletionDelay" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">30000</Value>
+    </Setting>
+    <Setting Name="ProcessDeletionDelay" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">30000</Value>
+    </Setting>
+    <Setting Name="MinBackoff" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="TracePerProcess" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MaxTraceSyscalls" Type="System.Int64" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="HostIdentifier" Type="System.String" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="AnonymizeHostname" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ScrubCommandLine" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TraceHostLevel" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TracePerThread" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ProfileCode" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
