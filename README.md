@@ -20,14 +20,14 @@ dbh.exe "kernel_file" enum | out-file "output symbols" -Encoding ASCII
 ## Quick start instructions
 
 * Open an elevated command prompt or powershell by right clicking the icon and choosing "Run as Administrator"
-* Change to the folder where SyscallCounterService.exe is located
+* Change to the folder where SystemCallService.exe is located
 * Install the service by running:
 ```
-SyscallCounterService.exe -install 
+SystemCallService.exe -install 
 ```
 * To uninstall the service, run:
 ```
-SyscallCounterService.exe -uninstall
+SystemCallService.exe -uninstall
 ```
 
 ## Overview 
@@ -45,34 +45,34 @@ Major error messages are also logged to the Application Event Log.
 ### Usage
 There are three ways to control the service.  All must be executed using "Run as Administrator":
 * sc.exe
-* SyscallCounterService.exe
+* SystemCallService.exe
 * net.exe ()for stopping and starting the service only)
 
 ####Installation
 ```
-sc.exe create SyscallCounterService binPath= "C:\Full\Path\To\SyscallCounterService.exe" start= auto
+sc.exe create SystemCallService binPath= "C:\Full\Path\To\SystemCallService.exe" start= auto
 ```
 or
 ```
-SyscallCounterService.exe -install 
+SystemCallService.exe -install 
 ```
 
 ####Uninstallation
-```sc.exe delete SyscallCounterService```
+```sc.exe delete SystemCallService```
 or
-```SyscallCounterService.exe -uninstall ```
+```SystemCallService.exe -uninstall ```
 
 ####Start Logging
 
-```sc.exe start SyscallCounterService```
+```sc.exe start SystemCallService```
 or
-```SyscallCounterService.exe -start ```
+```SystemCallService.exe -start ```
 or
-```net start SyscallCounterService```
+```net start SystemCallService```
 
 ####Stop Logging
-```sc.exe stop SyscallCounterService```
+```sc.exe stop SystemCallService```
 or
-```SyscallCounterService.exe -stop ```
+```SystemCallService.exe -stop ```
 or
-```net stop SyscallCounterService```
+```net stop SystemCallService```
