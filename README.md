@@ -34,7 +34,7 @@ SystemCallService.exe -uninstall
 
 ### Data storage
 
-Data are stored in C:\Windows\Temp\system_call_service_data\
+Data are stored in C:\Windows\Temp\SystemCallServiceData\
  * database.sqlite is a sqlite database containing all of the logged data.
  * debug_log.txt is a log file containing information useful for debugging.
  * host_data_trace is a binary file containing the host data
